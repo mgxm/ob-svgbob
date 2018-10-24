@@ -1,0 +1,31 @@
+#+TITLE: ob-svgbob
+
+* Introduction
+=ob-svgbob= enables [[http://orgmode.org/worg/org-contrib/babel/intro.html][Org-Babel]] support for evaluating [[https://github.com/ivanceras/svgbob][svgbob]] blocks.
+
+* Example
+#+BEGIN_SRC svgbob :file example.svg
+                      ,-.
+                      `-'
+                      /|\
+     ,---.             |
+     |Bob|            / \
+     `-+-'           Alice
+       |    hello      |
+       |-------------->|
+       |               |
+       |  Is it ok?    |
+       |<- - - - - - - |
+     ,-+-.           Alice
+     |Bob|            ,-.
+     `---'            `-'
+                      /|\
+                       |
+                      / \
+
+example from: github.com/ivanceras/svgbob
+#+END_SRC
+
+: #+RESULTS:
+
+ [[file:example.svg]]
