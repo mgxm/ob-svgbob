@@ -5,6 +5,7 @@
 ;; Author: Marcio Giaxa <i@mgxm.me>
 ;; Keywords: literate programming, svg, ascii
 ;; Homepage: https://github.com/mgxm/ob-svgbob
+;; Version:  0.0.1
 
 ;; This file is not part of GNU Emacs.
 
