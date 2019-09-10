@@ -3,9 +3,10 @@
 ;; Copyright (C) 2018 mgxm
 
 ;; Author: Marcio Giaxa <i@mgxm.me>
-;; Keywords: literate programming, svg, ascii
+;; Keywords: tools, files
 ;; Homepage: https://github.com/mgxm/ob-svgbob
 ;; Version:  0.0.1
+;; Package-Requires: ((emacs "24"))
 
 ;; This file is not part of GNU Emacs.
 
@@ -37,7 +38,7 @@
   "Default arguments to use when evaluating a svgbob source block.")
 
 (defun org-babel-execute:svgbob (body params)
-  "Execute a block of Svgbob code with org-babel.
+  "Execute a BODY of Svgbob code with PARAMS via org-babel.
 This function is called by `org-babel-execute-src-block'."
   (let* ((out-file (or (cdr (assq :file params))
 					   (error "You need to specify a :file parameter")))
